@@ -21,3 +21,12 @@ FROM books;
 -- Alias author so that it becomes unique_author
 SELECT DISTINCT author AS unique_author
 FROM books;
+
+
+-- VIEWING...............................................................................................................................................
+--   Add a single line of code that saves the results of the written query as a view called library_authors.
+-- Save the results of this query as a view called library_authors
+CREATE VIEW library_authors AS
+SELECT DISTINCT author AS unique_author
+FROM books;
+
