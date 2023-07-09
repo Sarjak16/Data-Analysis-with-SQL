@@ -1,0 +1,4 @@
+-- There are 350 books in the books table, representing all of the books that our local library has available for checkout.
+--  But how many different authors are represented in these 350 books? The answer is surely less than 350. For example, J.K.
+--   Rowling wrote all seven Harry Potter books,
+--  so if our library has all Harry Potter books, seven books will be written by J.K Rowling. There are likely many more repeat authors!
