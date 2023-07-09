@@ -14,3 +14,10 @@ FROM books
   -- Select unique authors and genre combinations from the books table
 SELECT DISTINCT author, genre
 FROM books;
+
+
+-- ALIASING...........................................................................................................................................
+--   Add an alias to the SQL query to rename the author column to unique_author in the result set.
+-- Alias author so that it becomes unique_author
+SELECT DISTINCT author AS unique_author
+FROM books;
