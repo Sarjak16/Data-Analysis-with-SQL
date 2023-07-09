@@ -8,3 +8,9 @@
 -- Select unique authors from the books table
 SELECT DISTINCT author
 FROM books
+
+
+-- 2.Update the code to return the unique author and genre combinations in the books table.
+  -- Select unique authors and genre combinations from the books table
+SELECT DISTINCT author, genre
+FROM books;
