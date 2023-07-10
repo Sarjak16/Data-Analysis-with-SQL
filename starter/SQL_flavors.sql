@@ -3,3 +3,5 @@
 SELECT genre
 FROM books
 LIMIT 10;
+
+
