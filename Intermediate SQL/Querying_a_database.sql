@@ -6,5 +6,8 @@ FROM people
 
 -- 2.
 -- Count the number of records with a birthdate in the people table, aliasing the result as count_birthdate.
+-- Count the number of birthdates in the people table
+SELECT COUNT(birthdate) AS count_birthdate
+FROM people
 -- 3.
 -- Count the records for languages and countries in the films table; alias as count_languages and count_countries.
