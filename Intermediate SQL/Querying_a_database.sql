@@ -11,3 +11,6 @@ SELECT COUNT(birthdate) AS count_birthdate
 FROM people
 -- 3.
 -- Count the records for languages and countries in the films table; alias as count_languages and count_countries.
+-- Count the records for languages and countries represented in the films table
+SELECT COUNT(language) AS count_languages, COUNT(country) AS count_countries
+FROM films;
