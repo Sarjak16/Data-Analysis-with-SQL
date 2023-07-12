@@ -14,3 +14,14 @@ FROM people
 -- Count the records for languages and countries represented in the films table
 SELECT COUNT(language) AS count_languages, COUNT(country) AS count_countries
 FROM films;
+
+-- ..................................................................................................................................................
+-- 1
+-- Return the unique countries represented in the films table using DISTINCT.
+
+-- Return the unique countries from the films table
+SELECT DISTINCT country
+FROM films;
+
+-- 2
+-- Return the number of unique countries represented in the films table, aliased as count_distinct_countries
