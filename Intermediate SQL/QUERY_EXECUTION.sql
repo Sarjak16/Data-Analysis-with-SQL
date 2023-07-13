@@ -26,3 +26,16 @@ FROM reviews;
 -- FROM peeple;
 SELECT COUNT(birthdate) AS count_birthdays
 FROM people;
+
+
+-- ....................................................................................................................
+--   SQL formatting
+
+
+--Adjust the sample code so that it is in line with standard practices.
+-- Rewrite this query
+-- select person_id, role from roles limit 10
+
+SELECT person_id, role
+FROM roles 
+LIMIT 10;
