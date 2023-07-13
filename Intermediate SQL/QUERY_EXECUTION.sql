@@ -4,7 +4,6 @@
 -- FROM films
 -- LIMIT 5;
 
--- Debug this code
 SELECT certification
 FROM films
 LIMIT 5;
@@ -12,5 +11,11 @@ LIMIT 5;
 
 -- 2
 -- Find the two errors in this code; the same error has been repeated twice.
+-- Debug this code
+-- SELECT film_id imdb_score num_votes
+-- FROM reviews;
+SELECT film_id, imdb_score, num_votes
+FROM reviews;
+
 -- 3
 -- Find the two bugs in this final query.
