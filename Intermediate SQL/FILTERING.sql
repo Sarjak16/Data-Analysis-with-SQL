@@ -15,3 +15,11 @@ LIMIT 10;
 SELECT COUNT(num_votes) AS films_over_100K_votes
 FROM reviews
 WHERE num_votes >= 100000;
+
+
+-- Select and count the language field using the alias count_spanish.
+-- Apply a filter to select only Spanish from the language field.
+-- Count the Spanish-language films
+SELECT COUNT(language) AS count_spanish
+FROM films
+WHERE language = 'Spanish';
