@@ -12,3 +12,6 @@ WHERE facebook_likes < 1000
 LIMIT 10;
 -- 3
 -- Count how many records have a num_votes of at least 100,000; use the alias films_over_100K_votes.
+SELECT COUNT(num_votes) AS films_over_100K_votes
+FROM reviews
+WHERE num_votes >= 100000;
