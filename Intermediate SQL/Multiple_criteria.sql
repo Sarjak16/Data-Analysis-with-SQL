@@ -65,3 +65,12 @@ WHERE release_year BETWEEN 1990 AND 2000
 	AND budget > 100000000
 -- Restrict the query to only Spanish-language films
 	AND(language='Spanish');
+
+
+---Finally, amend the query to include all Spanish-language or French-language films with the same criteria.
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+	AND budget > 100000000
+-- Amend the query to include Spanish or French-language films
+	AND (language ='Spanish' OR language='French');
