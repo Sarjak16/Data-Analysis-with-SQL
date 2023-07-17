@@ -14,3 +14,8 @@ WHERE release_year > 2000
 	AND language = 'German';
 -- 3
 -- Select all details for German-language films released after 2000 but before 2010 using only WHERE and AND.
+-- Select all records for German-language films released after 2000 and before 2010
+-- Update the query to see all German-language films released after 2000
+SELECT *
+FROM films
+WHERE (release_year > 2000 AND release_year < 2010) AND language = 'German';
