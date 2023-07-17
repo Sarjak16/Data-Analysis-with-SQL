@@ -26,3 +26,10 @@ WHERE (release_year > 2000 AND release_year < 2010) AND language = 'German';
 SELECT title, release_year
 FROM films
 WHERE release_year= 1990 OR release_year= 1999
+
+-- Filter the records to only include English or Spanish-language films.
+SELECT title, release_year
+FROM films
+WHERE (release_year = 1990 OR release_year = 1999)
+-- Add a filter to see only English or Spanish-language films
+AND	((language='spanish' OR language='English'));
