@@ -7,3 +7,5 @@ WHERE budget IS NULL;
 
 -- 2
 -- Count the number of films with a language associated with them and use the alias count_language_known.
+SELECT COUNT(language) AS count_language_known
+FROM films
