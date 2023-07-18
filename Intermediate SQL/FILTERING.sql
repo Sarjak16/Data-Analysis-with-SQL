@@ -33,5 +33,10 @@ FROM people
 WHERE name LIKE 'B%';
 -- 2
 -- Select the names of people whose names have 'r' as the second letter.
+SELECT name
+FROM people
+-- Select the names that have r as the second letter
+
+WHERE name LIKE '_r%';
 -- 3
 -- Select the names of people whose names don't start with 'A'.
