@@ -23,3 +23,15 @@ WHERE num_votes >= 100000;
 SELECT COUNT(language) AS count_spanish
 FROM films
 WHERE language = 'Spanish';
+
+--.................................FILTERING_TEXT...................................................................................................
+--   1
+-- Select the names of all people whose names begin with 'B'.
+-- Select the names that start with B
+SELECT name
+FROM people
+WHERE name LIKE 'B%';
+-- 2
+-- Select the names of people whose names have 'r' as the second letter.
+-- 3
+-- Select the names of people whose names don't start with 'A'.
