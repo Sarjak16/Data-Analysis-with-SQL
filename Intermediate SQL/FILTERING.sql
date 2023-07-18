@@ -43,3 +43,15 @@ SELECT name
 FROM people
 -- Select names that don't start with A
 WHERE name NOT LIKE 'A%';
+-- .......................................................EX2.............
+-- 1.  
+-- Select the title and release_year of all films released in 1990 or 2000 that were longer than two hours.
+-- Find the title and release_year for all films over two hours in length released in 1990 and 2000
+SELECT title, release_year
+FROM films
+WHERE release_year IN (1990, 2000) AND duration > 120;
+
+-- 2
+-- Select the title and language of all films in English, Spanish, or French using IN.
+-- 3
+-- Select the title, certification and language of all films certified NC-17 or R that are in English, Italian, or Greek.
