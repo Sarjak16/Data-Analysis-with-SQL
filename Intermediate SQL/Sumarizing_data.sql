@@ -11,5 +11,8 @@ FROM films;
 
 -- 3
 -- Find the most recent release_year in the films table, aliasing as latest_year.
+-- Find the latest release_year
+SELECT MAX(release_year) AS latest_year
+FROM films;
 -- 4
 -- Find the duration of the shortest film and use the alias shortest_film.
