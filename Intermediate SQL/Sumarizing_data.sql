@@ -19,3 +19,19 @@ FROM films;
 -- Find the duration of the shortest film
 SELECT MIN(duration) AS shortest_film
 FROM films;
+
+
+...............................................................................................................................
+--  1 
+-- Use SUM() to calculate the total gross for all films made in the year 2000 or later, and use the alias total_gross.
+-- Calculate the sum of gross from the year 2000 or later
+SELECT SUM(gross) AS total_gross
+from films
+WHERE release_year >=2000
+-- 2
+-- Calculate the average amount grossed by all films whose titles start with the letter 'A' and alias with avg_gross_A.
+-- 3
+-- Calculate the lowest gross film in 1994 and use the alias lowest_gross.
+-- 4
+-- Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross.
+
