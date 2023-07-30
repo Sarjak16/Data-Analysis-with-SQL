@@ -37,6 +37,11 @@ from films
 WHERE title LIKE 'A%';
 -- 3
 -- Calculate the lowest gross film in 1994 and use the alias lowest_gross.
+-- Calculate the lowest gross film in 1994
+
+SELECT MIN(gross) AS lowest_gross
+FROM films
+WHERE release_year = 1994;
 -- 4
 -- Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross.
 
