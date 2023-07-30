@@ -44,4 +44,7 @@ FROM films
 WHERE release_year = 1994;
 -- 4
 -- Calculate the highest gross film between 2000 and 2012, inclusive, and use the alias highest_gross.
-
+-- Calculate the highest gross film released between 2000-2012
+SELECT MAX(gross) AS highest_gross
+FROM films
+WHERE release_year BETWEEN 2000 AND 2012;
