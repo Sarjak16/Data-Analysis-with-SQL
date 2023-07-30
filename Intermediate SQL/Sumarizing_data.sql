@@ -30,6 +30,11 @@ from films
 WHERE release_year >=2000
 -- 2
 -- Calculate the average amount grossed by all films whose titles start with the letter 'A' and alias with avg_gross_A.
+-- Calculate the average gross of films that start with A
+
+SELECT AVG(gross) AS avg_gross_A
+from films
+WHERE title LIKE 'A%';
 -- 3
 -- Calculate the lowest gross film in 1994 and use the alias lowest_gross.
 -- 4
