@@ -12,3 +12,10 @@ FROM people;
 -- Find the number of decades in the films table
 SELECT (MAX(release_year)-MIN(release_year)) / 10.0 AS number_of_decades
 FROM films;
+
+
+
+-- Update the query by adding ROUND() around the calculation and round to two decimal places.
+-- Round duration_hours to two decimal places
+SELECT title, ROUND(duration / 60.0,2) AS duration_hours
+FROM films;
