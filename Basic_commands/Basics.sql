@@ -24,3 +24,7 @@ CREATE TABLE table_name (
     column_2 datatype,
     column_3 datatype
 );
+
+--Altertable
+ALTER TABLE table_name
+ADD column_name datatype;
