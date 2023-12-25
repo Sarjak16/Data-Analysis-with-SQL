@@ -79,3 +79,20 @@ SELECT studentID, FullName, sat_score, rcd_updated FROM student;
 |         9 | Raymond F. Boyce       |      2400 | 2017-08-16 15:35:33 |
 +-----------+------------------------+-----------+---------------------+
 9 rows in set (0.00 sec)
+Now, we'll repeat the SELECT query but we'll limit the rows returned using a WHERE statement.
+
+STUDENT studentID, FullName, sat_score, recordUpdated
+FROM student
+WHERE (studentID BETWEEN 1 AND 5 OR studentID = 8)
+        AND
+        sat_score NOT IN (1000, 1400);
++-----------+----------------------+-----------+---------------------+
+| studentID | FullName             | sat_score | rcd_updated         |
++-----------+----------------------+-----------+---------------------+
+|         1 | Monique Davis        |       400 | 2017-08-16 15:34:50 |
+|         2 | Teri Gutierrez       |       800 | 2017-08-16 15:34:50 |
+|         4 | Louis Ramsey         |      1200 | 2017-08-16 15:34:50 |
+|         5 | Alvin Greene         |      1200 | 2017-08-16 15:34:50 |
+|         8 | Donald D. Chamberlin |      2400 | 2017-08-16 15:35:33 |
++-----------+----------------------+-----------+---------------------+
+5 rows in set (0.00 sec)
