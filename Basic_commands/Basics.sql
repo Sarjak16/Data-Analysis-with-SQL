@@ -96,3 +96,14 @@ WHERE (studentID BETWEEN 1 AND 5 OR studentID = 8)
 |         8 | Donald D. Chamberlin |      2400 | 2017-08-16 15:35:33 |
 +-----------+----------------------+-----------+---------------------+
 5 rows in set (0.00 sec)
+
+
+-- UPDATE
+-- To update a record in a table you use the UPDATE statement.
+
+-- Use the WHERE condition to specify which records you want to update. It is possible to update one or more columns at a time. The syntax is:
+
+UPDATE table_name
+SET column1 = value1, 
+    column2 = value2, ...
+WHERE condition;
