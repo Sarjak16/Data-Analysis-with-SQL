@@ -60,9 +60,9 @@ CREATE TABLE Persons (
 WHERE
 (AND, OR, IN, BETWEEN, and LIKE)
 
-The WHERE clause is used to limit the number of rows returned.
+-- The WHERE clause is used to limit the number of rows returned.
 
-As an example, first we will show you a SELECT statement and results without a WHERE statement. Then we will add a WHERE statement that uses all five qualifiers above.
+-- As an example, first we will show you a SELECT statement and results without a WHERE statement. Then we will add a WHERE statement that uses all five qualifiers above.
 
 SELECT studentID, FullName, sat_score, rcd_updated FROM student;
 +-----------+------------------------+-----------+---------------------+
@@ -78,8 +78,8 @@ SELECT studentID, FullName, sat_score, rcd_updated FROM student;
 |         8 | Donald D. Chamberlin   |      2400 | 2017-08-16 15:35:33 |
 |         9 | Raymond F. Boyce       |      2400 | 2017-08-16 15:35:33 |
 +-----------+------------------------+-----------+---------------------+
-9 rows in set (0.00 sec)
-Now, we'll repeat the SELECT query but we'll limit the rows returned using a WHERE statement.
+--9 rows in set (0.00 sec)
+--Now, we'll repeat the SELECT query but we'll limit the rows returned using a WHERE statement.
 
 STUDENT studentID, FullName, sat_score, recordUpdated
 FROM student
@@ -95,7 +95,7 @@ WHERE (studentID BETWEEN 1 AND 5 OR studentID = 8)
 |         5 | Alvin Greene         |      1200 | 2017-08-16 15:34:50 |
 |         8 | Donald D. Chamberlin |      2400 | 2017-08-16 15:35:33 |
 +-----------+----------------------+-----------+---------------------+
-5 rows in set (0.00 sec)
+--5 rows in set (0.00 sec)
 
 
 -- UPDATE
