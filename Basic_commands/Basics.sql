@@ -107,3 +107,9 @@ UPDATE table_name
 SET column1 = value1, 
     column2 = value2, ...
 WHERE condition;
+
+--Here is an example updating the Name of the record with Id 4:
+
+UPDATE Person
+SET Name = “Elton John”
+WHERE Id = 4;
