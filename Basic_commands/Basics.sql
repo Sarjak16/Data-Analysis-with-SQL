@@ -125,3 +125,9 @@ FROM table_name1
 JOIN table_name2 ON table_name1.ForeignKey = table_name2.Key
 
 
+--Here is an example updating Manager of all records:
+
+UPDATE Person
+SET Person.Manager = Department.Manager
+FROM Person
+JOIN Department ON Person.DepartmentID = Department.ID
