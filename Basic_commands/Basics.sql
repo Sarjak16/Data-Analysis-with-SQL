@@ -131,3 +131,13 @@ UPDATE Person
 SET Person.Manager = Department.Manager
 FROM Person
 JOIN Department ON Person.DepartmentID = Department.ID
+
+
+-- GROUP BY
+-- GROUP BY allows you to combine rows and aggregate data.
+
+-- Here is the syntax of GROUP BY:
+
+SELECT column_name, COUNT(*)
+FROM table_name
+GROUP BY column_name;
