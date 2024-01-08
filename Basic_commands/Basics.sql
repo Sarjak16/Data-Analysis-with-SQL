@@ -141,3 +141,15 @@ JOIN Department ON Person.DepartmentID = Department.ID
 SELECT column_name, COUNT(*)
 FROM table_name
 GROUP BY column_name;
+
+
+
+-- HAVING
+-- HAVING allows you to filter the data aggregated by the GROUP BY clause so that the user gets a limited set of records to view.
+
+-- Here is the syntax of HAVING:
+
+SELECT column_name, COUNT(*)
+FROM table_name
+GROUP BY column_name
+HAVING COUNT(*) > value;
