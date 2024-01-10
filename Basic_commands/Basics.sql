@@ -153,3 +153,12 @@ SELECT column_name, COUNT(*)
 FROM table_name
 GROUP BY column_name
 HAVING COUNT(*) > value;
+
+-- AVG()
+-- “Average” is used to calculate the average of a numeric column from the set of rows returned by a SQL statement.
+
+-- Here is the syntax for using the function:
+
+SELECT groupingField, AVG(num_field)
+FROM table1
+GROUP BY groupingField
