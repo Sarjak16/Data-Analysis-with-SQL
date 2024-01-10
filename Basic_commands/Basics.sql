@@ -162,3 +162,9 @@ HAVING COUNT(*) > value;
 SELECT groupingField, AVG(num_field)
 FROM table1
 GROUP BY groupingField
+
+-- Here’s an example using the student table:
+
+SELECT studentID, FullName, AVG(sat_score) 
+FROM student 
+GROUP BY studentID, FullName;
