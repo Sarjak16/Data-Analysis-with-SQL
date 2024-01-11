@@ -168,3 +168,8 @@ GROUP BY groupingField
 SELECT studentID, FullName, AVG(sat_score) 
 FROM student 
 GROUP BY studentID, FullName;
+
+AS
+AS allows you to rename a column or table using an alias.
+
+SELECT user_only_num1 AS AgeOfServer, (user_only_num1 - warranty_period) AS NonWarrantyPeriod FROM server_table
