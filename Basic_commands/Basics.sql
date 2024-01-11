@@ -169,7 +169,23 @@ SELECT studentID, FullName, AVG(sat_score)
 FROM student 
 GROUP BY studentID, FullName;
 
-AS
-AS allows you to rename a column or table using an alias.
+-- AS
+-- AS allows you to rename a column or table using an alias.
 
 SELECT user_only_num1 AS AgeOfServer, (user_only_num1 - warranty_period) AS NonWarrantyPeriod FROM server_table
+
+-- This results in output as below.
+
++-------------+------------------------+
+| AgeOfServer | NonWarrantyPeriod      | 
++-------------+------------------------+
+|         36  |                     24 |
+|         24  |                     12 | 
+|         61  |                     49 |
+|         12  |                      0 | 
+|          6  |                     -6 |
+|          0  |                    -12 | 
+|         36  |                     24 |
+|         36  |                     24 | 
+|         24  |                     12 | 
++-------------+------------------------+
