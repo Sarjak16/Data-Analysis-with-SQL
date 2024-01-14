@@ -1,4 +1,4 @@
--- SELECT&FROM
+-- --------------------------------------------------SELECT&FROM--------------------------------------
 
 SELECT studentID, FirstName, LastName, FirstName + ' ' + LastName AS FullName
 FROM student;
@@ -17,7 +17,7 @@ FROM student;
 +-----------+-------------------+------------+------------------------+
 9 rows in set (0.00 sec)
 
---CREATE TABLE
+-- ---------------------------------------------------CREATE TABLE-----------------------------------
 
 CREATE TABLE table_name (
     column_1 datatype,
