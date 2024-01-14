@@ -29,7 +29,7 @@ CREATE TABLE table_name (
 ALTER TABLE table_name
 ADD column_name datatype;
 
---CHECK
+-- ----------------------------------------------------CHECK------------------------------------------
 -- The CHECK constraint is used to limit the value range that can be placed in a column.
 
 -- If you define a CHECK constraint on a single column it allows only certain values for this column. 
@@ -98,7 +98,7 @@ WHERE (studentID BETWEEN 1 AND 5 OR studentID = 8)
 --5 rows in set (0.00 sec)
 
 
--- UPDATE
+-- -------------------------------------UPDATE---------------------------------------------------------------------------
 -- To update a record in a table you use the UPDATE statement.
 
 -- Use the WHERE condition to specify which records you want to update. It is possible to update one or more columns at a time. The syntax is:
@@ -133,7 +133,7 @@ FROM Person
 JOIN Department ON Person.DepartmentID = Department.ID
 
 
--- GROUP BY
+-- ----------------------------------------------GROUP BY---------------------------------------------------------
 -- GROUP BY allows you to combine rows and aggregate data.
 
 -- Here is the syntax of GROUP BY:
@@ -144,7 +144,7 @@ GROUP BY column_name;
 
 
 
--- HAVING
+-- ---------------------------------------------HAVING--------------------------------------------------------
 -- HAVING allows you to filter the data aggregated by the GROUP BY clause so that the user gets a limited set of records to view.
 
 -- Here is the syntax of HAVING:
@@ -154,7 +154,7 @@ FROM table_name
 GROUP BY column_name
 HAVING COUNT(*) > value;
 
--- AVG()
+-- ---------------------------------------------AVG()-----------------------------------------------------------
 -- “Average” is used to calculate the average of a numeric column from the set of rows returned by a SQL statement.
 
 -- Here is the syntax for using the function:
@@ -169,7 +169,7 @@ SELECT studentID, FullName, AVG(sat_score)
 FROM student 
 GROUP BY studentID, FullName;
 
--- AS
+-- --------------------------AS-------------------------------------------------------------------------
 -- AS allows you to rename a column or table using an alias.
 
 SELECT user_only_num1 AS AgeOfServer, (user_only_num1 - warranty_period) AS NonWarrantyPeriod FROM server_table
