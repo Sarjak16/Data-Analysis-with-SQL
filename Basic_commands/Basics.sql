@@ -216,3 +216,6 @@ JOIN order_table AS ord ON cust.cust_number = ord.cust_number
 -- ORDER BY gives us a way to sort the result set by one or more of the items in the SELECT section.
 --  Here is an SQL sorting the students by FullName in descending order.
 --  The default sort order is ascending (ASC) but to sort in the opposite order (descending) you use DESC.
+SELECT studentID, FullName, sat_score
+FROM student
+ORDER BY FullName DESC;
