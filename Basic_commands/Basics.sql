@@ -219,3 +219,15 @@ JOIN order_table AS ord ON cust.cust_number = ord.cust_number
 SELECT studentID, FullName, sat_score
 FROM student
 ORDER BY FullName DESC;
+
+-- ------------------------------------------COUNT
+-- COUNT will count the number of rows and return that count as a column in the result set.
+
+-- Here are examples of what you would use COUNT for:
+
+-- Counting all rows in a table (no group by required)
+-- Counting the totals of subsets of data (requires a Group By section of the statement)
+-- This SQL statement provides a count of all rows. Note that you can give the resulting COUNT column a name using “AS”.
+
+
+SELECT count(*) AS studentCount FROM student; 
