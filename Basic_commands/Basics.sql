@@ -231,3 +231,12 @@ ORDER BY FullName DESC;
 
 
 SELECT count(*) AS studentCount FROM student; 
+
+-- DELETE
+-- DELETE is used to delete a record in a table.
+
+-- Be careful. You can delete all records of the table or just a few.
+--  Use the WHERE condition to specify which records you want to delete. The syntax is:
+
+DELETE FROM table_name
+WHERE condition;
