@@ -240,3 +240,8 @@ SELECT count(*) AS studentCount FROM student;
 
 DELETE FROM table_name
 WHERE condition;
+
+--Here is an example deleting from the table Person the record with Id 3:
+
+DELETE FROM Person
+WHERE Id = 3;
