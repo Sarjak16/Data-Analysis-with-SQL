@@ -245,3 +245,8 @@ WHERE condition;
 
 DELETE FROM Person
 WHERE Id = 3;
+
+------------------------------------------------------ INNER JOIN
+-- JOIN, also called Inner Join, selects records that have matching values in two tables.
+
+SELECT * FROM A x JOIN B y ON y.aId = x.Id
