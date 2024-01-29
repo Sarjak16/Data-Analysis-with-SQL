@@ -246,12 +246,12 @@ WHERE condition;
 DELETE FROM Person
 WHERE Id = 3;
 
------------------------------------------------------- INNER JOIN
+------------------------------------------------------ INNER JOIN-----------------------------------------------------------
 -- JOIN, also called Inner Join, selects records that have matching values in two tables.
 
 SELECT * FROM A x JOIN B y ON y.aId = x.Id
 
-------------------------------------- LEFT JOIN
+------------------------------------- LEFT JOIN---------------------------------------------------------------------------
 -- A LEFT JOIN returns all rows from the left table, 
 -- and the matched rows from the right table. Rows in the left table will be returned even if there was no match in the right table. 
 -- The rows from the left table with no match in the right table will have null for right table values.
