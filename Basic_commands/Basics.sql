@@ -257,3 +257,10 @@ SELECT * FROM A x JOIN B y ON y.aId = x.Id
 -- The rows from the left table with no match in the right table will have null for right table values.
 
 SELECT * FROM A x LEFT JOIN B y ON y.aId = x.Id
+
+-- ----------------------------------------------RIGHT JOIN
+-- A RIGHT JOIN returns all rows from the right table, and the matched rows from the left table.
+--  Opposite of a left join, this will return all rows from the right table even where there is no match in the left table.
+--   Rows in the right table that have no match in the left table will have null values for left table columns.
+
+SELECT * FROM A x RIGHT JOIN B y ON y.aId = x.Id
