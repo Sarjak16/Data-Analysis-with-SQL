@@ -264,3 +264,14 @@ SELECT * FROM A x LEFT JOIN B y ON y.aId = x.Id
 --   Rows in the right table that have no match in the left table will have null values for left table columns.
 
 SELECT * FROM A x RIGHT JOIN B y ON y.aId = x.Id
+
+---------------------------------------- FULL OUTER JOIN
+-- -- A FULL OUTER JOIN returns all rows for which there is a match in either of the tables. 
+-- So if there are rows in the left table that do not have matches in the right table, those will be included.
+--  Also, if there are rows in the right table that do not have matches in the left table, those will be included.
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+FULL OUTER JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName
