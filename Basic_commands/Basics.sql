@@ -275,3 +275,9 @@ FROM Customers
 FULL OUTER JOIN Orders
 ON Customers.CustomerID=Orders.CustomerID
 ORDER BY Customers.CustomerName
+
+-- INSERT
+-- INSERT is a way to insert data into a table.
+
+INSERT INTO table_name (column_1, column_2, column_3) 
+VALUES (value_1, 'value_2', value_3);
