@@ -281,3 +281,10 @@ ORDER BY Customers.CustomerName
 
 INSERT INTO table_name (column_1, column_2, column_3) 
 VALUES (value_1, 'value_2', value_3);
+
+
+-- ----------------------------------------------------LIKE
+-- LIKE  is used in a WHERE or HAVING (as part of the GROUP BY) to limit the selected rows to the items when a column has a certain pattern of characters contained in it.
+
+-- This SQL will select students that have FullName starting with “Monique” or ending with “Greene”.
+
