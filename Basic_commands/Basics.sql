@@ -287,4 +287,16 @@ VALUES (value_1, 'value_2', value_3);
 -- LIKE  is used in a WHERE or HAVING (as part of the GROUP BY) to limit the selected rows to the items when a column has a certain pattern of characters contained in it.
 
 -- This SQL will select students that have FullName starting with “Monique” or ending with “Greene”.
+SELECT studentID, FullName, sat_score, rcd_updated
+FROM student 
+WHERE 
+    FullName LIKE 'Monique%' OR 
+    FullName LIKE '%Greene'; 
++-----------+---------------+-----------+---------------------+
+| studentID | FullName      | sat_score | rcd_updated         |
++-----------+---------------+-----------+---------------------+
+|         1 | Monique Davis |       400 | 2017-08-16 15:34:50 |
+|         5 | Alvin Greene  |      1200 | 2017-08-16 15:34:50 |
++-----------+---------------+-----------+---------------------+
+2 rows in set (0.00 sec)
 
