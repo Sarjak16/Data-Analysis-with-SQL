@@ -306,6 +306,8 @@ WHERE
 SELECT studentID, FullName, sat_score, rcd_updated
 FROM student 
 WHERE FullName NOT LIKE '%cer Pau%' AND FullName NOT LIKE '%"Ted"%';
+
+
 +-----------+----------------------+-----------+---------------------+
 | studentID | FullName             | sat_score | rcd_updated         |
 +-----------+----------------------+-----------+---------------------+
