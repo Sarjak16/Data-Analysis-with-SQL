@@ -300,3 +300,20 @@ WHERE
 +-----------+---------------+-----------+---------------------+
 2 rows in set (0.00 sec)
 
+You can place NOT before LIKE to exclude the rows with the string pattern instead of selecting them. This SQL excludes records that contain “cer Pau” and “Ted” in the FullName column.
+
+SELECT studentID, FullName, sat_score, rcd_updated
+FROM student 
+WHERE FullName NOT LIKE '%cer Pau%' AND FullName NOT LIKE '%"Ted"%';
++-----------+----------------------+-----------+---------------------+
+| studentID | FullName             | sat_score | rcd_updated         |
++-----------+----------------------+-----------+---------------------+
+|         1 | Monique Davis        |       400 | 2017-08-16 15:34:50 |
+|         2 | Teri Gutierrez       |       800 | 2017-08-16 15:34:50 |
+|         4 | Louis Ramsey         |      1200 | 2017-08-16 15:34:50 |
+|         5 | Alvin Greene         |      1200 | 2017-08-16 15:34:50 |
+|         6 | Sophie Freeman       |      1200 | 2017-08-16 15:34:50 |
+|         8 | Donald D. Chamberlin |      2400 | 2017-08-16 15:35:33 |
+|         9 | Raymond F. Boyce     |      2400 | 2017-08-16 15:35:33 |
++-----------+----------------------+-----------+---------------------+
+7 rows in set (0.00 sec)
