@@ -300,7 +300,8 @@ WHERE
 +-----------+---------------+-----------+---------------------+
 2 rows in set (0.00 sec)
 
-You can place NOT before LIKE to exclude the rows with the string pattern instead of selecting them. This SQL excludes records that contain “cer Pau” and “Ted” in the FullName column.
+-- You can place NOT before LIKE to exclude the rows with the string pattern instead of selecting them. 
+-- This SQL excludes records that contain “cer Pau” and “Ted” in the FullName column.
 
 SELECT studentID, FullName, sat_score, rcd_updated
 FROM student 
