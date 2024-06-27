@@ -10,3 +10,14 @@
     SELECT title, duration 
     FROM films
     ORDER BY duration DESC;
+
+-- Select the release year, duration, and title sorted by release year and duration
+    SELECT title, duration, release_year 
+    FROM films
+    ORDER BY duration, release_year;
+
+-- Select the certification, release year, and title sorted by certification and release year
+
+    SELECT title, certification, release_year 
+    FROM films
+    ORDER BY certification, release_year DESC;
