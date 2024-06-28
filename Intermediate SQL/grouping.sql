@@ -28,3 +28,16 @@ FROM films
 GROUP BY country
 -- Filter results to countries with more than 10 different certifications
 HAVING COUNT(DISTINCT certification)>10;
+
+--...................................................................
+
+-- Select the country and average_budget from films
+SELECT country, AVG(budget) AS average_budget
+FROM films
+-- Group by country
+GROUP BY COUNTRY
+-- Filter to countries with an average_budget of more than one billion
+HAVING AVG(budget)>1000000000
+-- Order by descending order of the aggregated budget
+ORDER BY average_budget DESC
+LIMIT 2;
